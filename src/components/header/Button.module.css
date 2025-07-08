@@ -1,0 +1,31 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    background-color: #cfffa3;
+    padding: 10px 40px;
+}
+
+.inner {
+    display: flex;
+    gap: 150px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.vkladka {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.vkladka:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.title:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
