@@ -5,10 +5,13 @@ import { PaginationComponent } from '../pagination/Pagination.tsx';
 import { useState } from 'react';
 import type { CatCard } from '../../types/types.ts';
 import { Spin } from 'antd';
+import { useEffect } from 'react';
 
 export const Cats: FC = () => {
   const [page, setPage] = useState<string>('1');
-
+  useEffect(() => {
+    console.log('API Key:', import.meta.env.VITE_CAT_API_KEY);
+  }, []);
   const { data, error, isLoading } = useGetCatsQuery(Number(page));
   const cardClickHandler = (url: string) => {
     window.open(url, '_blank');
