@@ -21,7 +21,7 @@ export const Cats: FC = () => {
   return (
     <div className={styles.pageLayout}>
       <div className={styles.layout}>
-        {data ? (
+        {data !== undefined ? (
           data.map((elem: CatCard) => {
             return (
               <div
