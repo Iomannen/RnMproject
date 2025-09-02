@@ -12,6 +12,7 @@ export const PaginationComponent: FC<Props> = ({ onClick, pages }) => {
       total={pages}
       defaultCurrent={1}
       defaultPageSize={1}
+      showSizeChanger={false}
       onChange={(event) => onClick(event)}
     />
   );

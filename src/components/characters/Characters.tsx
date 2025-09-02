@@ -21,7 +21,7 @@ export const Characters: FC = () => {
         ) : characters !== undefined ? (
           characters.results.map((elem) => (
             <div key={elem.id} className={styles.card}>
-              <div className={styles.obertka}>
+              <div className={styles.imageobertka}>
                 <img
                   src={elem.image}
                   alt={`${elem.name} image`}

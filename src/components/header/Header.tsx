@@ -8,7 +8,9 @@ export const Header: FC = () => {
   return (
     <div className={styles.layout}>
       <div className={styles.inner}>
-        <div className={styles.title}>Rick'n'Morty Cyclopedy</div>
+        <div className={styles.title} onClick={() => navigate('/characters')}>
+          My Website
+        </div>
         <div className={styles.vkladka} onClick={() => navigate('/characters')}>
           Characters
         </div>
@@ -17,6 +19,9 @@ export const Header: FC = () => {
         </div>
         <div className={styles.vkladka} onClick={() => navigate('/episodes')}>
           Episodes
+        </div>
+        <div className={styles.vkladka} onClick={() => navigate('/cats')}>
+          Cats
         </div>
       </div>
       <div className={styles.inner}>

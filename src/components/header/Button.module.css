@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
     gap: 150px;
-    background-color: #cfffa3;
+    background-color: #03527e;
     padding: 10px 40px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.1em;
 }
 
 .inner {
@@ -13,11 +16,13 @@
 
 .title {
     font-size: 36px;
+    text-shadow: aliceblue 1px 1px 1px;
 }
 
 .vkladka {
-    padding-top: 10px;
-    font-size: 20px;
+    padding-top: 5px;
+    text-shadow: aliceblue 1px 1px 1px;
+    font-size: 25px;
 }
 
 .vkladka:hover {

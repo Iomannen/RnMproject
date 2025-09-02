@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { RnmAPI } from './RnMAPI.ts';
+import { RnmAPI, CatsAPI } from './RnMAPI.ts';
 
 export const store = configureStore({
-  reducer: { [RnmAPI.reducerPath]: RnmAPI.reducer },
+  reducer: {
+    [RnmAPI.reducerPath]: RnmAPI.reducer,
+    [CatsAPI.reducerPath]: CatsAPI.reducer,
+  },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(RnmAPI.middleware),
+    getDefaultMiddleware().concat(RnmAPI.middleware, CatsAPI.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

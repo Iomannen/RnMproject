@@ -1,0 +1,123 @@
+
+.layout {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    font-size: 21px;
+}
+
+.pageLayout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cardLayout {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(79, 161, 255);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 20px 5px rgba(14, 14, 14, 0.3);
+    gap: 10px;
+}
+
+.cardLayout:hover {
+    cursor: pointer;
+    scale: 1.01;
+    transition: scale 0.4s;
+}
+
+.cardLayout:hover .image {
+    scale: 1.04;
+    transition: scale 0.2s;
+}
+
+.textContainer {
+    margin-top: -50px;
+    padding: 20px 20px;
+    overflow: hidden;
+    height: 150px;
+    transition: height 0.5s ease;
+    background: linear-gradient(to bottom, #3b82f6, #ffffff);
+    position: relative;
+
+    /* делаем зубцы сверху */
+    clip-path: polygon(
+            0 12px,
+            5% 0,
+            10% 12px,
+            15% 0,
+            20% 12px,
+            25% 0,
+            30% 12px,
+            35% 0,
+            40% 12px,
+            45% 0,
+            50% 12px,
+            55% 0,
+            60% 12px,
+            65% 0,
+            70% 12px,
+            75% 0,
+            80% 12px,
+            85% 0,
+            90% 12px,
+            95% 0,
+            100% 12px,
+            100% 100%,
+            0 100%
+    );
+}
+
+
+.textContainer:hover {
+    overflow: visible;
+    height: 350px;
+}
+
+.textContainer:hover .description {
+    text-justify: auto;
+}
+
+.imageContainer {
+    height: 350px;
+    overflow: hidden;
+}
+
+.description {
+    padding-top: 20px;
+}
+
+.tag {
+    color: #fffdfd;
+    font-size: 23px;
+    text-shadow: #ed0810 1px 1px 1px;
+}
+
+.text {
+    color: #2c2729;
+}
+
+.breed {
+    font-weight: 300;
+    text-shadow: #252022 1px 1px 1px;
+    color: #ffffff;
+}
+
+.temperament {
+    font-style: italic;
+}
+
+.image {
+    width: 400px;
+    height: 350px;
+}

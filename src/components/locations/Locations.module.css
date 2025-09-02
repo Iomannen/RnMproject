@@ -25,10 +25,9 @@
     box-shadow: 0 0 15px rgba(14, 14, 14, 0.3);
     padding: 10px;
     border-radius: 8px;
-    background-color: #64c800;
+    background-color: rgb(79, 161, 255);
 }
 
 .layout:hover {
     cursor: pointer;
-    scale: 1.05;
 }
