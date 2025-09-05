@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import { Header } from '../../components/header/Header.tsx';
 import { Cats } from '../../components/cats/Cats.tsx';
 
-export const CatsPage: FC = () => {
+const CatsPage: FC = () => {
   return (
     <div>
       <Header />
@@ -10,3 +10,4 @@ export const CatsPage: FC = () => {
     </div>
   );
 };
+export default CatsPage;

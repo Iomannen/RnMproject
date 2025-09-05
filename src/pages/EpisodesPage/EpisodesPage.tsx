@@ -3,7 +3,7 @@ import styles from '../../components/main/Main.module.css';
 import { Header } from '../../components/header/Header.tsx';
 import { Episodes } from '../../components/episodes/Episodes.tsx';
 
-export const EpisodesPage: FC = () => {
+const EpisodesPage: FC = () => {
   return (
     <div className={styles.layout}>
       <Header />
@@ -13,3 +13,4 @@ export const EpisodesPage: FC = () => {
     </div>
   );
 };
+export default EpisodesPage;

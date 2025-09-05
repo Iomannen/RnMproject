@@ -3,7 +3,7 @@ import { Locations } from '../../components/locations/Locations.tsx';
 import { Header } from '../../components/header/Header.tsx';
 import styles from '../../components/main/Main.module.css';
 
-export const LocationsPage: FC = () => {
+const LocationsPage: FC = () => {
   return (
     <div className={styles.layout}>
       <Header />
@@ -13,3 +13,4 @@ export const LocationsPage: FC = () => {
     </div>
   );
 };
+export default LocationsPage;
